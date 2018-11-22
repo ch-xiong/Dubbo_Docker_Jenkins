@@ -1,5 +1,6 @@
 package com.gaoxi.entity.user;
 
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**
@@ -8,9 +9,13 @@ import java.io.Serializable;
  *
  * @description 地址信息
  */
+@Table
+@Entity
 public class LocationEntity implements Serializable{
 
     /** 主键 */
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
 
     /** 详细地址 */

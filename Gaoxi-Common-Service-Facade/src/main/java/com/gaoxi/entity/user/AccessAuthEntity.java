@@ -9,6 +9,7 @@ import java.io.Serializable;
  * @date 2017/11/1 上午11:05
  * @description 接口访问权限的实体类
  */
+
 public class AccessAuthEntity implements Serializable {
 
     /** 请求 URL */

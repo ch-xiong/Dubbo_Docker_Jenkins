@@ -1,5 +1,6 @@
 package com.gaoxi.entity.user;
 
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**
@@ -7,9 +8,13 @@ import java.io.Serializable;
  * @date 2017/11/1 下午7:26
  * @description 权限实体类
  */
+@Table
+@Entity
 public class PermissionEntity implements Serializable {
 
     /** 主键 */
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
 
     /** 权限名称 */

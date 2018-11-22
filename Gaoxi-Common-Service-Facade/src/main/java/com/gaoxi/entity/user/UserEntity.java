@@ -3,17 +3,21 @@ package com.gaoxi.entity.user;
 import com.gaoxi.enumeration.user.UserStateEnum;
 import com.gaoxi.enumeration.user.UserTypeEnum;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.sql.Timestamp;
-import java.util.List;
 
 /**
  * @Author 大闲人柴毛毛
  * @Date 2017/10/30 下午6:11
  */
+@Table
+@Entity
 public class UserEntity implements Serializable {
 
     /** 主键 */
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
 
     /** 用户名 */
