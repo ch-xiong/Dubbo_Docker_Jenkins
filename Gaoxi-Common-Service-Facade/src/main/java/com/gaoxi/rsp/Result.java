@@ -30,7 +30,7 @@ public class Result<T> implements Serializable {
      * @param <T>
      * @return
      */
-    public static <T> Result<T> newSuccessResult(T data){
+    public static <T>Result<T> newSuccessResult(T data){
         Result<T> result = new Result<>();
         result.isSuccess = true;
         result.data = data;
@@ -54,7 +54,7 @@ public class Result<T> implements Serializable {
      * @param <T>
      * @return
      */
-    public static <T> Result<T> newFailureResult(){
+    public static <T extends Object> Result<T> newFailureResult(){
         Result<T> result = new Result<>();
         result.isSuccess = false;
         result.errorCode = ExpCodeEnum.UNKNOW_ERROR.getCode();

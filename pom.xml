@@ -94,7 +94,7 @@
 		<module>Gaoxi-Common-Service-Facade</module>
 	</modules>
 
-	<profiles>
+	<!--<profiles>
 		<profile>
 			<id>dev</id>
 			<properties>
@@ -116,10 +116,10 @@
 				<profileActive>prod</profileActive>
 			</properties>
 		</profile>
-	</profiles>
+	</profiles>-->
 
 	<build>
-		<resources>
+		<!--<resources>
 			<resource>
 				<directory>src/main/resources</directory>
 				<filtering>true</filtering>
@@ -138,20 +138,20 @@
 					<include>application-${profileActive}.properties</include>
 				</includes>
 			</resource>
-		</resources>
+		</resources>-->
 
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<plugin>
+			<!--<plugin>
 				<groupId>org.codehaus.cargo</groupId>
 				<artifactId>cargo-maven2-plugin</artifactId>
 				<version>1.6.5</version>
 				<configuration>
 					<container>
-						<!-- 指明使用的tomcat服务器版本 -->
+						&lt;!&ndash; 指明使用的tomcat服务器版本 &ndash;&gt;
 						<containerId>tomcat8x</containerId>
 						<type>remote</type>
 					</container>
@@ -169,8 +169,8 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
-			<plugin>
+			</plugin>-->
+			<!--<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>3.0.2</version>
 				<configuration>
@@ -179,7 +179,7 @@
 					</delimiters>
 					<useDefaultDelimiters>false</useDefaultDelimiters>
 				</configuration>
-			</plugin>
+			</plugin>-->
 		</plugins>
 	</build>
 

@@ -1,6 +1,5 @@
 package com.gaoxi.entity.user;
 
-import javax.persistence.*;
 import java.io.Serializable;
 
 /**
@@ -8,13 +7,13 @@ import java.io.Serializable;
  * @date 2017/11/1 下午7:00
  * @description 菜单实体类
  */
-@Table
-@Entity
+/*@Table
+@Entity*/
 public class MenuEntity implements Serializable {
 
     /** 主键 */
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    /*@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)*/
     private String id;
 
     /** 菜单名称 */

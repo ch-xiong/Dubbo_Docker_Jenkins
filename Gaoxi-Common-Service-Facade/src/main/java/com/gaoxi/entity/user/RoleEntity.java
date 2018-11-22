@@ -1,6 +1,5 @@
 package com.gaoxi.entity.user;
 
-import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
@@ -9,13 +8,13 @@ import java.util.List;
  * @date 2017/11/1 下午6:57
  * @description 角色实体类
  */
-@Table
-@Entity
+/*@Table
+@Entity*/
 public class RoleEntity implements Serializable {
 
     /** 主键 */
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+  /*  @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)*/
     private String id;
 
     /** 角色名称 */
